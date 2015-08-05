@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="vTSpjS" name="WorkingLibPdTest" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.matthysmusic.latido" includeBinaryInAppConfig="1"
+              jucerVersion="3.2.0" companyName="Troobadore">
+  <MAINGROUP id="av6Bmc" name="WorkingLibPdTest">
+    <GROUP id="{FCEDEA8C-FA87-8F1A-B758-36E062DFEF2C}" name="Source">
+      <FILE id="dWoJgB" name="portAudioRender.cpp" compile="1" resource="0"
+            file="Source/portAudioRender.cpp"/>
+      <FILE id="vxenGH" name="portAudioRender.h" compile="0" resource="0"
+            file="Source/portAudioRender.h"/>
+      <FILE id="t9vDY2" name="PdObject.cpp" compile="1" resource="0" file="Source/PdObject.cpp"/>
+      <FILE id="TnWBXI" name="PdObject.h" compile="0" resource="0" file="Source/PdObject.h"/>
+      <FILE id="JSPPRH" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="e1Nsff" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="O2u8Hk" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile" externalLibraries="portaudio&#10;pdcpp"
+                extraCompilerFlags="-fpermissive" extraLinkerFlags="">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/" isDebug="1" optimisation="1"
+                       targetName="WorkingTest" headerPath="/home/jwmatthys/Audio/libpd/pure-data/src&#10;/home/jwmatthys/Audio/libpd/cpp&#10;/home/jwmatthys/Audio/libpd/libpd_wrapper&#10;/home/jwmatthys/Audio/libpd/libpd_wrapper/util"/>
+        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="3"
+                       targetName="WorkingTest" headerPath="/home/jwmatthys/Audio/libpd/pure-data/src&#10;/home/jwmatthys/Audio/libpd/cpp&#10;/home/jwmatthys/Audio/libpd/libpd_wrapper&#10;/home/jwmatthys/Audio/libpd/libpd_wrapper/util"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_video" path="../../juce/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../juce/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../juce/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../juce/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../juce/modules"/>
+        <MODULEPATH id="juce_events" path="../../juce/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../juce/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../juce/modules"/>
+        <MODULEPATH id="juce_core" path="../../juce/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../juce/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../juce/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../juce/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../juce/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_audio_processors" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_cryptography" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_opengl" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_video" showAllCode="1" useLocalCopy="1"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>

@@ -1,0 +1,27 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww13200\viewh10540\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Copyright Robert Esler 2014\
+robert@urbanstew.org\
+www.robertesler.com\
+www.urbanstew.org\
+\
+This an Xcode sample project that uses these libraries:\
+JUCE, GUI API\
+libpd, audio synthesis library that interfaces with .pd patches\
+portaudio, an audio API\
+\
+This project uses C++, so a general understanding of this language will be helpful to understand the GUI framework, as well as the audio api.  \
+\
+Some helpful tips:\
+1) Don't alter the JUCE library unless you know what you are doing.\
+2) This project is set to build on Mac OSX 10.8, it probably should work on 10.9 but that is not guaranteed.  You can alter the build settings in Xcode or the __testJucer.xcodeproj\
+3) All of the port audio and libpd code is in the portAudioRender class.  Look there for how to interface with your .pd patch.  You will want to change the path to your .pd file before building.    \
+4) The MainComponent class is a JUCE class that inherits all the GUI objects that are currently displayed.  This where you will build you GUI layer that will talk to Pd.  There are some examples in the code.  \
+5) Be warned.  The Pd GUI is a bit more "efficient" than JUCE on how it handles processor directives.  That means if you want to program a super-complex GUI than you will want to use Xcode optimization features or do your own.  My own tests showed that a basic slider in JUCE was upwards of 10% of my processor while changing its value!  If you don't have a reason to use this library, then just use Pd.  \
+6) Finally, you can try to contact me with questions about this project, however, I reserve the right not to respond.  Don't take it personally, in general most of this project is other people's code so your best bet is to probably contact them first.  \
+\
+LICENSE INFORMATION:  This project sustains the license structure of all its included libraries.  JUCE is a GPL license which means any derivative applications also have to be open source and GPL.  LIBPD is BSD and port audio is an open license.  }
